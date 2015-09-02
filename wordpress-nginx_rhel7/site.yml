@@ -1,9 +1,9 @@
 ---
 - name: Install WordPress, MariaDB, Nginx, and PHP-FPM
-  hosts: wordpress-server
-  remote_user: root
+  hosts: all
+  remote_user: vagrant
   # remote_user: user
-  # sudo: yes
+  sudo: yes
 
   roles:
     - common
